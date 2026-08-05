@@ -1,45 +1,56 @@
-name: Android Release Build
-
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
-
-      - name: Set up JDK 17
-        uses: actions/setup-java@v5
-        with:
-          distribution: temurin
-          java-version: 17
-
-      - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@v4
-
-      - name: Make Gradle Wrapper Executable
-        run: chmod +x gradlew
-
-      - name: Build Release APK
-        run: ./gradlew assembleRelease
-
-      - name: Build Release AAB
-        run: ./gradlew bundleRelease
-
-      - name: Upload APK
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-apk
-          path: app/build/outputs/apk/release/*.apk
-
-      - name: Upload AAB
-        uses: actions/upload-artifact@v4
-        with:
-          name: release-aab
-          path: app/build/outputs/bundle/release/*.aab: 
+Skip to content
+hulkastory-pixel
+adinatul-ulum-app
+Repository navigation
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security and quality
+Insights
+Settings
+.github/workflows/azure-webapps-node.yml
+Add files via upload #8
+All jobs
+Run details
+Annotations
+1 error and 1 warning
+build
+failed 6 minutes ago in 13s
+Search logs
+2s
+2s
+5s
+Node 20 is being deprecated. This workflow is running with Node 24 by default. If you need to temporarily use Node 20, you can set the ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION=true environment variable. For more information see: https://github.blog/changelog/2025-09-19-deprecation-of-node-20-on-github-actions-runners/
+Run actions/setup-node@v4
+Attempting to download 20.x...
+(node:2259) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Acquiring 20.20.2 - x64 from https://github.com/actions/node-versions/releases/download/20.20.2-23521894959/node-20.20.2-linux-x64.tar.gz
+Extracting ...
+/usr/bin/tar xz --strip 1 --warning=no-unknown-keyword --overwrite -C /home/runner/work/_temp/7dcad55c-1bad-4b8c-aa9b-f86eb6351591 -f /home/runner/work/_temp/89f6d2ab-8b72-4ed3-b47a-6a9ca77c3d89
+Adding to the cache ...
+Environment details
+/opt/hostedtoolcache/node/20.20.2/x64/bin/npm config get cache
+/home/runner/.npm
+Error: Dependencies lock file is not found in /home/runner/work/adinatul-ulum-app/adinatul-ulum-app. Supported file patterns: package-lock.json,npm-shrinkwrap.json,yarn.lock
+0s
+0s
+0s
+0s
+0s
+Footer
+© 2026 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
+Security
+Status
+Community
+Docs
+Contact
+Manage cookies
+Do not share my personal information
+ 
