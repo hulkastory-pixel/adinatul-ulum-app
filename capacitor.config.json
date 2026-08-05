@@ -1,0 +1,15 @@
+{
+  "appId": "com.madrasa.madinatululum.app",
+  "appName": "Madinatul Ulum Madrasa & Orphanage",
+  "webDir": "dist",
+  "server": {
+    "androidScheme": "https",
+    "cleartext": false
+  },
+  "android": {
+    "buildOptions": {
+      "keystorePath": "madrasa-release-key.keystore",
+      "keystoreAlias": "madrasa_production_key"
+    }
+  }
+}
