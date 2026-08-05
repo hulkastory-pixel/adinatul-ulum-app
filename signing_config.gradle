@@ -1,0 +1,8 @@
+signingConfigs {
+  release {
+    storeFile file("madrasa-release-key.keystore")
+    storePassword "******"
+    keyAlias "madrasa_production_key"
+    keyPassword "******"
+  }
+}

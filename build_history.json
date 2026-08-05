@@ -1,0 +1,19 @@
+[
+  {
+    "id": "BUILD-149894",
+    "appName": "Madrasa Official App",
+    "packageName": "com.madrasa.madinatululum.app",
+    "version": "v1.0.0 (Code 1)",
+    "versionName": "1.0.0",
+    "versionCode": 1,
+    "date": "8/3/2026, 10:15:49 AM",
+    "type": "Signed Release APK & AAB",
+    "apkFileName": "Madrasa_Official_App_v1.0.0_code1.apk",
+    "aabFileName": "Madrasa_Official_App_v1.0.0_code1.aab",
+    "apkSize": "18.2 MB",
+    "aabSize": "14.6 MB",
+    "apkDownloadUrl": "/api/android-builder/download/Madrasa_Official_App_v1.0.0_code1.apk",
+    "aabDownloadUrl": "/api/android-builder/download/Madrasa_Official_App_v1.0.0_code1.aab",
+    "status": "Success"
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "nodeVersion": "v22.23.1",
+  "androidTargetApi": 35,
+  "gradleVersion": "8.2.0",
+  "javaVendor": "OpenJDK 17"
+}
